@@ -1,0 +1,43 @@
+    /* 针对整个页面设置背景图片 */
+    body {
+        /* background-image: url('./assets/images/pictures/121201261_p0.jpg'); */
+        background-image: url('./img/Background-Image.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        /* 使用伪元素 ::before 创建一个透明背景层 */
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: -1;
+    }
+
+    /* 针对某个具体的 div 设置背景(备用) */
+    .background-div {
+        /* background-image: url('./assets/images/pictures/121201261_p0.jpg'); */
+        background-image: url('./img/Background-Image.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .background-div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }

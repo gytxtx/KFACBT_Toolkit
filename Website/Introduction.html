@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 网页开发：[Senc森辞](https://space.bilibili.com/1463937988/) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KFACBT's Toolkit 官方网站</title>
+    <meta name="description" content="KFACBT's Toolkit 官方网站">
+    <meta name="keywords" content="gytxtx,KFACBT,KFACBT's Toolkit,KFACBT 的工具箱,KT,EPL,eyuyan,Toolkit,tools,工具箱">
+    <link rel="icon" href="./favicon.ico" sizes="16x16">
+
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+
+    <!-- 图标 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Outlined -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Rounded -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <!-- Sharp -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- Two Tone -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+    <!-- 样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .background {
+            position: relative;
+            width: 100%;
+            /* height: 100vh; */
+            min-height: 120rem;
+            /* 根据需要调整高度 */
+        }
+
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./img/海报_背景图片.png');
+            /* 替换为你的图片URL */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            /* 调整透明度，范围从0到1 */
+
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            /* 确保内容在背景图之上 */
+            color: white;
+            /* 根据需要调整文字颜色 */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <mdui-navigation-drawer close-on-overlay-click id="drawer" modal>
+        <mdui-list>
+            <mdui-collapse accordion>
+                <mdui-collapse-item>
+                    <mdui-list-item rounded href="./index.html" slot="header" icon="home">首页</mdui-list-item>
+                    <mdui-list-item rounded href="./Introduction.html" slot="header" icon="description">软件介绍</mdui-list-item>
+
+                </mdui-collapse-item>
+                <!-- <mdui-collapse-item>
+                    <mdui-list-item rounded href="./info.html" slot="header" icon="info">关于</mdui-list-item>
+                </mdui-collapse-item> -->
+            </mdui-collapse>
+        </mdui-list>
+    </mdui-navigation-drawer>
+
+    <div style="overflow: hidden">
+        <mdui-top-app-bar>
+            <mdui-button-icon icon="menu" id="menu"></mdui-button-icon>
+            <mdui-top-app-bar-title>KFACBT's Toolkit 官方网站</mdui-top-app-bar-title>
+
+
+            <mdui-tooltip content="GitHub 主页">
+                <!-- <mdui-button-icon icon="g_mobiledata" href="https://www.github.com/gytxtx/" target="_blank"></mdui-button-icon> -->
+                <mdui-button-icon icon="link" href="https://www.github.com/gytxtx/" target="_blank">
+                    <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z">
+                    </path>
+                </svg> -->
+                </mdui-button-icon>
+            </mdui-tooltip>
+
+            <!-- 弹出的菜单 -->
+            <mdui-dropdown>
+                <mdui-button-icon slot="trigger" icon="more_vert"></mdui-button-icon>
+                <mdui-menu selects="single" value="light" id="modeChange">
+                    <mdui-menu-item value="light">浅色模式</mdui-menu-item>
+                    <mdui-menu-item value="dark">深色模式</mdui-menu-item>
+                    <mdui-divider inset></mdui-divider>
+                    <mdui-menu-item value="auto">跟随系统</mdui-menu-item>
+                </mdui-menu>
+            </mdui-dropdown>
+        </mdui-top-app-bar>
+    </div>
+
+    <div class="center-box h1-box">
+        <div class="page-1">
+            <div class="mdui-prose">
+                <h2>简介</h2>
+                <!-- iframe 嵌套网页内容，可以修改 src 属性来改变指向的网页链接 -->
+                <!-- <iframe src="https://gytxtx.github.io/KFACBT_Toolkit" frameborder="1"
+                    style="width: 100%; min-height: 100rem !important; border: 1px solid black;"></iframe> -->
+                <iframe src="https://gytxtx.github.io/KFACBT_Toolkit" frameborder="1"
+                    style="width: 100%; min-height: 100rem !important; border: 1px solid rgb(0,96,192);"></iframe>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

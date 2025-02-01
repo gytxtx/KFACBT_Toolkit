@@ -1,0 +1,93 @@
+#description {
+    font-size: 14px;
+}
+
+.colortxt {
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(0, 96, 192), rgb(0, 81, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* .h1-box {
+    margin-top: 32vh;
+} */
+
+.center-box {
+    margin: 5rem;
+
+}
+
+/* 新建的类，用于在移动端使容器内的元素水平居中 */
+.mobile-center {
+    text-align: center;
+    /* 使文本内容居中 */
+}
+
+.page-1 {
+    margin-bottom: 8rem;
+}
+
+/* 默认样式 */
+h1 {
+    font-size: 2em;
+    /* 默认标题字体大小 */
+}
+
+p {
+    font-size: 1em;
+    /* 默认简介字体大小 */
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    h1 {
+        /* font-size: 1.5em; 移动端标题字体大小 */
+        font-size: 1.2em;
+    }
+
+    .colortxt {
+        /* font-size: 1.5em; 移动端标题字体大小 */
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+        /* 移动端简介字体大小 */
+    }
+
+    /* 在移动端应用新的类 */
+    /* .center-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center; */
+    /* 使子元素水平居中 */
+    /* } */
+
+    .title-region {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 使子元素水平居中 */
+    }
+
+    .badge-region {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 使子元素水平居中 */
+
+        /* 控制子元素之间的间距 */
+        gap: 5px;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    .center-box img,
+    .center-box mdui-button {
+        margin: 0 auto;
+        /* 使图片和按钮水平居中 */
+    }
+}
