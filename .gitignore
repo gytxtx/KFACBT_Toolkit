@@ -4,8 +4,12 @@
 # 忽略所有 .ini 文件
 *.ini
 
-# 忽略名为 temp 文件夹
-# temp/
+# 忽略 Versions 目录及其子目录中的所有易语言支持库文件
+/Versions/**/*.run
+/Versions/**/*.fne
+/Versions/**/*.fnr
+/Versions/**/*.npk
+/Versions/**/*.opk
 
-# 忽略根目录下的 config.json 文件
-# /config.json
+# 忽略 Versions 目录及其子目录中的 wmp.dll 文件
+/Versions/**/wmp.dll
