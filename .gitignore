@@ -1,0 +1,11 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略所有 .ini 文件
+*.ini
+
+# 忽略名为 temp 文件夹
+# temp/
+
+# 忽略根目录下的 config.json 文件
+# /config.json
