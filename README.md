@@ -12,6 +12,17 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gytxtx/KFACBT_Toolkit?style=for-the-badge"> 
 </div>
 
+> [!WARNING]
+>
+> ## 以下留言致以来自中国大陆的开发者：
+>
+> For English speakers, please ignore this message.
+>
+> **请不要继续在 issues 板块下发表任何无意义且无法促进此项目持续发展的内容**。在提交 issue 之前，请仔细思考你要发布的内容**是否合理**，如果不能，请不要浪费其他人的时间；同时请考虑**开发者能否修复/实现**，如果不能，请自己提交 PR 而不是 issue。
+> 在交流时请尊重他人，不要使用不文明用语。请不要催促或强求开发者和其他贡献者，他们是一群热爱开源的志愿者，不是你的私人雇员！
+>
+> 尽可能在除国内社交平台外的其他地方使用英语而不是中文，我们会优先处理英文内容。
+
 ## 简介
 
 **KFACBT's Toolkit** 是 [KFACBT](https://github.com/gytxtx) 使用 `易语言` 开发的一款面向 `Windows` 的工具箱。
