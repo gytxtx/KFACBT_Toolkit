@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Item>
+    <Static text="hello" rect="50,50,200,50" nodeid="1" />
+    <Static text="test" rect="50,150,200,50" nodeid="2" exstyle="1090519040"/>
+
+</Item>

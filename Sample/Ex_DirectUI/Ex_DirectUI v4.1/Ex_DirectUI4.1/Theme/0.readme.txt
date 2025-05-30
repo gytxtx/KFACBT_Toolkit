@@ -1,0 +1,42 @@
+注意:
+1.属性名:不区分大小写
+2.属性值:区分大小写(内部定义函数均为小写).
+
+
+class			类名
+rect			定位该类在图片里的位置.(左,顶,右,底)
+padding-text		文本内间距.(左,顶,右,底)，相对于canvas
+
+================以下三个属性相斥======================
+background-grid		九宫矩形偏移像素.(左,顶,右,底)
+background-size		缩放值(width,height).相对于目标矩形
+background-repeat	值:
+			1:背景图像将仅显示一次。
+			2:背景图像将在垂直方向和水平方向重复。
+			3:背景图像将在水平方向重复。
+			4:背景图像将在垂直方向重复。
+================以上三个属性相斥======================
+
+background-postion	背景偏移值:(x,y:相对于canvas.允许单位:%)
+
+background-flags	值:(可相加)
+			1:禁用DPI
+			2:九宫矩形_排除中间
+			4:播放动画
+
+
+--------------------------------------------------------------------------
+
+颜色值索引：
+
+0=COLOR_BACKGROUND	(背景颜色)
+1=COLOR_BORDER		(边框颜色)
+2=COLOR_TEXT_NORMAL	(文本颜色.正常)
+3=COLOR_TEXT_HOVER	(文本颜色.点燃)
+4=COLOR_TEXT_DOWN	(文本颜色.按下)
+5=COLOR_TEXT_FOCUS	(文本颜色.焦点)
+6=COLOR_TEXT_CHECKED	(文本颜色.选中)
+7=COLOR_TEXT_SELECTED	(文本颜色.选择)
+8=COLOR_TEXT_HOT	(文本颜色.热点跟踪)
+9=COLOR_TEXT_VISTED	(文本颜色.已访问)
+10=COLOR_TEXT_SHADOW	(文本颜色.阴影)

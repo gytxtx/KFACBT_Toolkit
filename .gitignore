@@ -1,0 +1,15 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略所有 .ini 文件
+*.ini
+
+# 忽略 Versions 目录及其子目录中的所有易语言支持库文件
+/Versions/**/*.run
+/Versions/**/*.fne
+/Versions/**/*.fnr
+/Versions/**/*.npk
+/Versions/**/*.opk
+
+# 忽略 Versions 目录及其子目录中的 wmp.dll 文件
+/Versions/**/wmp.dll

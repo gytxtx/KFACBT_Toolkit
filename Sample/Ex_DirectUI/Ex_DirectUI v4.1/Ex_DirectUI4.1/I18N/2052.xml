@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<StringBundle>
+	<String name="error.connect">对不起,服务器连接失败!</String>
+	<String name="error.parse">数据解析失败！</String>
+	<String name="error.checksum">数据效验失败！</String>
+	<String name="error.writefile">写入更新文件失败！</String>
+	<String name="error.account">您输入的账户名或密码错误！</String>
+	<String name="error.unknow" fmt="1">未知错误！错误代码：%d</String>
+	<String name="error.lock">您的帐号已被锁定,详情请咨询客服。</String>
+	<String name="error.speedup" fmt="1">(%d)启动加速失败！%s</String>
+	<String name="error.expire">对不起，您的账户已经过期。是否立即续费？</String>
+	<String name="error.device">您的账户已在其它设备上登录。</String>
+	<String name="error.userstatus">您的账户已被锁定，请联系客服。</String>
+	<String name="error.disconnect">已断开连接</String>
+	<String name="error.maintained">当前节点正在维护,请更换节点重试</String>
+	<String name="error.overflow">当前节点连接用户过多,请更换节点重试</String>
+	<String name="error.maxconn">帐号已超过最大连接数，可能造成的原因：&#x000A;1：上次未正常退出程序 &#x000A;2：帐号已在其它电脑登录  &#x000A;</String>
+	<String name="error.expire1">对不起！您的账户已经过期。</String>
+	<String name="error.tel">请输入正确的手机号码</String>
+	<String name="error.pwdlen">密码格式不正确(6-16字符)</String>
+	<String name="error.repwd">两次输入的密码不一致</String>
+	<String name="error.19">该手机已注册过帐号</String>
+	<String name="error.9">发送验证码过于频繁，一分钟后再试</String>
+	<String name="error.10">发送短信验证码条数已超上限</String>
+	<String name="error.11">短信验证码发送失败</String>
+	<String name="error.12">验证码已发送</String>
+	<String name="error.13">您输入的验证码错误</String>
+	<String name="error.21">该手机已注册过帐号</String>
+	<String name="error.22">密码格式不正确(6-16字符)</String>
+	<String name="error.23">您输入的验证错误</String>
+	<String name="error.24">恭喜您，帐号已注册成功</String>
+	<String name="error.90">您的帐号正常,无需清理</String>
+
+	<String name="tips.checkcode">您可以发送验证码强制下线帐号</String>
+	<String name="offline">强制下线</String>
+	<String name="tips.offline">您的账户已强制下线成功,请重新连接</String>
+
+	<String name="title" fmt="1">%s</String>
+	<String name="username" fmt="1">%s</String>
+	<String name="password" fmt="1">%s</String>
+	<String name="savepassword">记住密码</String>
+	<String name="autologin">自动登录</String>
+	<String name="register">帐号注册</String>
+	<String name="forgot">找回密码</String>
+	<String name="banner1">请输入用户名</String>
+	<String name="banner2">请输入密码</String>
+	<String name="login">登 录</String>
+	<String name="connecting">正在连接服务器...</String>
+	<String name="logining">正在登录...</String>
+	<String name="updating">正在更新...</String>
+	<String name="updatefiles">正在更新 %s</String>
+	<String name="return">返回</String>
+	<String name="regnow">立即注册</String>
+	<String name="reg.username">请输入手机号码</String>
+	<String name="reg.password1">请输入密码</String>
+	<String name="reg.password2">再次输入密码</String>
+	<String name="reg.checkcode">短信验证码</String>
+	<String name="reg.getcode">获取验证码</String>
+
+
+	<String name="tips.logo">点击 展开/收缩 窗口</String>
+
+	<String name="selectgame">点击选择或更换游戏</String>
+	<String name="tips.nodes">点击更换线路</String>
+	<String name="tips.mode">点击更换模式</String>
+	<String name="tips.network">点击配置游戏插件</String>
+
+	<String name="defalut.node">未分配节点</String>
+	<String name="nodedispatching">正在分配游戏节点...</String>
+	<String name="nonnode">该游戏暂未分配节点</String>
+	<String name="network">配置插件</String>
+
+	<String name="plugin.memory">系统内存优化</String>
+	<String name="memory.cache">预读缓存优化(加快游戏文件读取速度)</String>
+	<String name="memory.virtual">虚拟内存优化(内存不够硬盘来凑)</String>
+	<String name="memory.game">游戏内存优化(自动释放游戏内存)</String>
+	<String name="plugin.game">游戏相关插件</String>
+
+
+	<String name="plugin.save">返回</String>
+
+	<String name="speedup">立即加速</String>
+	<String name="s.check">正在检测环境</String>
+	<String name="s.connect">正在启动加速</String>
+	<String name="s.disconnect">正在断开链接 %d ...</String>
+	<String name="s.disconnected">正在停止加速 %d ...</String>
+	<String name="s.stop">停止加速</String>
+	<String name="tips.connected">已开启加速</String>
+	<String name="tips.disconnected">已停止加速</String>
+	<String name="tips.reconnect">链接已被断开,正在为您重新启动加速...</String>
+
+	<String name="tips.buy">您的账户即将过期</String>
+
+
+	<String name="defalut.game">请添加游戏</String>
+	<String name="nodename">节点名称</String>
+	<String name="delay">延迟</String>
+	<String name="timeout">超时</String>
+	<String name="nodestatus">负载</String>
+	<String name="title.mode">加速模式选择</String>
+	<String name="mode.auto">自动模式</String>
+	<String name="mode.1">模式一</String>
+	<String name="mode.2">模式二</String>
+	<String name="mode.3">模式三</String>
+	<String name="node.select">选择节点</String>
+
+	<String name="version" fmt="1">当前版本: %s</String>
+	<String name="menu.game">游戏</String>
+	<String name="menu.home">首页</String>
+	<String name="menu.setting">设置</String>
+
+	<String name="sign">签到领时间</String>
+	<String name="time.package" fmt="1">套餐到期时间：%s</String>
+	<String name="time.expiry" fmt="1">计时剩余时间：%s 分钟</String>
+	<String name="xufei">立即续费</String>
+
+	<String name="notify">最新公告</String>
+	<String name="activity">热门活动</String>
+	<String name="news">新闻资讯</String>
+
+	<String name="news1">%s</String>
+	<String name="news2">%s</String>
+	<String name="news3">%s</String>
+	<String name="news4">%s</String>
+	<String name="news5">%s</String>
+	<String name="date1">%s</String>
+	<String name="date2">%s</String>
+	<String name="date3">%s</String>
+	<String name="date4">%s</String>
+	<String name="date5">%s</String>
+	<String name="showmore">点击查看详情</String>
+
+	<String name="entergame">请输入游戏名称</String>
+	<String name="allgame">全部游戏</String>
+	<String name="hotgame">热门游戏</String>
+	<String name="allsvc">全服</String>
+	<String name="others">其它</String>
+	<String name="area1" fmt="1">%s</String>
+	<String name="area2" fmt="1">%s</String>
+	<String name="area3" fmt="1">%s</String>
+	<String name="area4" fmt="1">%s</String>
+	<String name="area5" fmt="1">%s</String>
+	<String name="area6" fmt="1">%s</String>
+	<String name="area7" fmt="1">%s</String>
+	<String name="area8" fmt="1">%s</String>
+
+	<String name="usercenter">用户中心</String>
+	<String name="official">官方网站</String>
+	<String name="changepsw">修改密码</String>
+	<String name="buy">购买套餐</String>
+	<String name="services">在线客服</String>
+	<String name="cdk">卡密兑换</String>
+	<String name="tools">相关工具</String>
+	<String name="lsp.inst">安装LSP</String>
+	<String name="tips.lsp.inst">安装LSP加速模块</String>
+	<String name="lsp.reset">还原LSP</String>
+	<String name="tips.lsp.reset">当网络出现异常时,可重置置系统默认配置(需重启系统)</String>
+	<String name="tap.inst">安装TAP</String>
+	<String name="tips.tap.inst">安装TAP虚拟网卡</String>
+	<String name="tap.uninst">卸载TAP</String>
+	<String name="tips.tap.uninst">卸载TAP虚拟网卡</String>
+	<String name="svc.restart">重启服务</String>
+	<String name="tips.svc.restart">重启系统加速服务</String>
+	<String name="log.show">查看日志</String>
+	<String name="tips.log.show">查看程序运行日志</String>
+	<String name="control">操作完毕！</String>
+	<String name="log" fmt="1">%s&#x000A;(CTRL+C复制)</String>
+
+	<String name="settings">程序设置</String>3
+	<String name="dislsp">禁用LSP加速</String>
+	<String name="topmost">窗口总在最前</String>
+	<String name="reconnect">掉线自动重连</String>
+	<String name="shownotify">加速成功或失败时显示通知信息</String>
+	<String name="autohide">加速成功时隐藏窗口到系统托盘区域</String>
+	<String name="showmini">开启加速时隐藏右边区域(显示迷你窗口)</String>
+
+
+	<String name="showwindow">显示窗口</String>
+	<String name="logoff">注销登录</String>
+
+	<String name="tips.exit">您点击了关闭按钮，请选择操作：</String>
+	<String name="clickclose">点击关闭按钮时：</String>
+	<String name="hidetotray">最小化到托盘区域</String>
+	<String name="exitprogram">退出程序</String>
+	<String name="remember">记住选择</String>
+	
+	
+</StringBundle>	

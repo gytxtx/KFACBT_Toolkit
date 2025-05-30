@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- t=0为直线,1为贝塞尔曲线,2为B样条曲线,d=终点值(百分比) -->
+<Curve type="2" dest="100">
+    <Node time="10" value="10">
+    <Node time="40" value="25">
+    <Node time="70" value="80">
+</Curve>

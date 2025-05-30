@@ -1,0 +1,126 @@
+var idMaintab=1000
+var idShowGameList=2002
+var idGameList=2010
+var idHideGameList=2014
+var idNodesList=2020
+var idReturn=2021
+var idBlurWnd=10086
+var idGameIconMask=2004
+var idAreaMask=201200
+
+function onclick_maintab(obj)
+{
+	var id = obj.lparam;
+	if (id != idMaintab)
+	{
+    obj.getobjfromname("maintab").left = obj.left;
+	obj.getobjfromid(idMaintab).visable(0);
+	obj.getobjfromid(id).visable(1);
+		if(obj.getobjfromid(idGameList).top != 0)
+		{
+			if(obj.getobjfromid(idNodesList).visable!=0)
+			{
+				obj.getobjfromid(idShowGameList).visable(0);
+			}else
+			{
+				obj.getobjfromid(idShowGameList).visable(id==2000);	
+			}
+		}
+		if(id==2000)
+			{
+				obj.getobjfromid(idReturn).visable(obj.getobjfromid(idNodesList).visable || obj.getobjfromid(idShowGameList).visable==0);
+
+			}else
+			{
+				obj.getobjfromid(idReturn).visable(0)
+			}
+
+	idMaintab=id;
+	}
+}
+
+function onclick_showgamelist(obj)
+{
+	obj.getobjfromid(idReturn).visable(1);
+	obj.visable(0);
+	obj.getobjfromid(idGameList).top = 0;
+}
+
+function onclick_hidegamelist(obj)
+{
+	obj.getobjfromid(idReturn).visable(0);
+	obj.getobjfromid(idShowGameList).visable(1);
+	obj.getobjfromid(idGameList).top = -545;
+}
+
+function onmouseover_nodes(obj)
+{
+	obj.getobjfromname("nodes1").alpha=230;
+	obj.getobjfromname("nodes2").alpha=230;
+	obj.getobjfromname("nodes3").alpha=255;
+	obj.getobjfromname("nodes4").alpha=255;
+}
+
+function onmouseout_nodes(obj)
+{
+	obj.getobjfromname("nodes1").alpha=204;
+	obj.getobjfromname("nodes2").alpha=204;
+	obj.getobjfromname("nodes3").alpha=230;
+	obj.getobjfromname("nodes4").alpha=204;
+}
+
+function onclick_nodes(obj)
+{
+
+	obj.killfocus();
+	obj.getobjfromid(idShowGameList).visable(0);
+	obj.getobjfromid(idNodesList).visable(1);
+	obj.getobjfromid(idReturn).visable(1);
+
+}
+
+
+function onclick_selectnodes(obj)
+{
+	obj.killfocus();
+	obj.getobjfromid(idShowGameList).visable(1);
+	obj.getobjfromid(idReturn).visable(0);
+	obj.getobjfromid(idNodesList).visable(0);
+	obj.getobjfromid(idGameList).top = -545;
+}
+
+function onmouseover_selectgame(obj)
+{
+	obj.getobjfromid(idGameIconMask).alpha=81;
+}
+
+function onmouseout_selectgame(obj)
+{
+	obj.getobjfromid(idGameIconMask).alpha=51;
+}
+
+function onclick_selectgame(obj)
+{
+	obj.getobjfromid(idBlurWnd).visable(1);
+}
+
+function onclick_blur(obj)
+{
+	obj.visable(0);
+}
+
+function onclick_destroy(obj)
+{
+	obj.destroy();
+}
+
+function onclick_areachange(obj)
+{
+	obj.getobjfromid(idAreaMask).move(obj.left,obj.top+1,-1,-1);
+}
+
+function onclick_hideerror(obj)
+{
+
+	obj.getobjfromid(20063).visable(0);
+}

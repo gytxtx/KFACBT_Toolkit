@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Jiasula rect="0,0,420,320" text="i18n(title)" background-image="res(bkg.png)" background-color="rgba(0,0,0,128)" style-directui="247813" style-window="-1777729536" styleex-window="786440" onmessage="msg.login" >
+
+	<static id="1000" rect="11,0,409,320" background-image="res(l1.png)"/>
+	<static id="1001" rect="33,0,387,320" background-image="res(l2.png)"/>
+	<static id="1002" rect="0,0,382,320" background-image="res(l3.png)"/>
+
+	<static rect="0,242,420,79" background-image="res(hill.png)"/>
+
+	
+	<static rect="159,39,102,55" background-image="res(logo.png)" onload="onload_login" ontimer="ontimer_login"/>
+
+	<static id="1010" rect="0,108,420,88" background-color="rgb(0,0,0,51)" blur="15">
+		
+		<edit id="1003" rect="0,0,420,44" text="i18n(username)" text-banner="i18n(banner1)" style="edit.login" background-image="res(username.png)"/>
+		<edit id="1004" rect="0,44,420,44" text="i18n(password)" text-banner="i18n(banner2)" style="edit.login" style-object="268435458" background-image="res(password.png)"/>
+
+		<include src="res(item.xml)" />
+	</static>
+
+	<checkbutton id="1005" rect="30,205,80,30" text="i18n(savepassword)" style="btn.normal" oncheck="oncheck_savepassword"/>
+	<checkbutton id="1006" rect="120,205,80,30" text="i18n(autologin)" style="btn.normal" oncheck="oncheck_autologin"/>
+
+	<button rect="220,205,80,30" text="i18n(forgot)" style="btn.link"/>
+	<button rect="310,205,80,30" text="i18n(register)" style="btn.link" onclick="onclick_reg"/>
+	
+	<script src="res(Login.js)" run="onAttach()"/>
+	<style src="res(Login.css)" />
+	
+	<include src="res(item.xml)" />
+
+	<button id="1007" rect="95,246,230,40" text="i18n(connecting)" theme="file(Theme\btn.login.ext)" />
+
+	<static id="1008" rect="0,0,420,320" background-color="rgb(0,0,0,0)" blur="30" onmessage="reg.login" style-object="0">
+		<static rect="0,55,420,180" background-color="rgb(0,0,0,0)">
+			<edit id="1100" rect="95,0,230,40" text-banner="i18n(reg.username)" style="edit.reg" background-image="res(reg.username.png)"/>
+			<edit id="1101" rect="95,45,230,40" text-banner="i18n(reg.password1)" style="edit.reg" style-object="268435458" background-image="res(reg.password.png)"/>
+			<edit id="1102" rect="95,90,230,40" text-banner="i18n(reg.password2)" style="edit.reg" style-object="268435458" background-image="res(reg.password.png)"/>
+			<edit id="1103" rect="95,135,230,40" text-banner="i18n(reg.checkcode)" style="edit.reg" background-image="res(reg.checkcode.png)"/>
+			<button id="1104" rect="240,144,74,24" text="i18n(reg.getcode)" theme="file(Theme\btn.checkcode.ext)" onclick="onclick_checkcode" ontimer="ontimer_checkcode"/>
+		</static>
+
+		<button id="1105" rect="95,246,230,40" text="i18n(regnow)" theme="file(Theme\btn.login.ext)"/>
+	</static>
+	<button id="1009" rect="0,0,30,30" theme="file(Theme\btn.ret.ext)" style-object="0" styleex-object="939524096" tips="i18n(return)" onclick="onclick_ret"/>
+	
+	
+	
+</Jiasula>

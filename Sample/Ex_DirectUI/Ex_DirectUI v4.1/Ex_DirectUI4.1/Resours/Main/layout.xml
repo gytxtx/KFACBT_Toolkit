@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Jiasula rect="0,0,752,600" background-image="res(bkg.jpg)" background-repeat="1" background-color="rgba(15,15,45)" style-directui="247877" style-window="-1777729536" styleex-window="786440" layout="6" onmessage="msg.main" text="i18n(title)" javascript="res(Main.js)" style="res(Main.css)">
+	<button name="logo" id="1000" rect="5,5,60,24" style="btn.topmost.customdraw" background-image="res(logo.png)" background-repeat="1" background-position="5,5" tips="i18n(tips.logo)"/>
+	<page name="right" rect="300,0,451,546" >
+		<page id="10000" name="home" rect="0,0,450,546" style-object="0">
+			<page name="user" rect="0,5,450,105">
+				<button id="10050" rect="15,17,126,72" theme="file(Theme\btn.sign.ext)" text="i18n(sign)"/>
+				<static id="10052" name="time.package" rect="156,30,280,24" style="stc.user" background-image="res(time.package.png)" text="i18n(time.package)"/>
+				<static name="time.expiry" rect="156,55,280,24" style="stc.user" background-image="res(time.expiry.png)" text="i18n(time.expiry)"/>
+				<button id="10051" rect="329,54,100,24" text="i18n(xufei)" style="btn.link"/>
+			</page>
+			<button id="10300" rect="0,110,450,150" style="btn.customdraw" background-color="rgba(255,255,255,51)">
+				<button id="10301" rect="0,55,40,40" theme="file(Theme\btn.left.ext)"/>
+				<button id="10302" rect="410,55,40,40" theme="file(Theme\btn.right.ext)"/>
+			</button>
+
+			<radiobutton id="10200" rect="0,260,150,46" style="btn.notify" text="i18n(notify)" check="1"/>
+			<radiobutton id="10201" rect="150,260,150,46" style="btn.notify" text="i18n(activity)"/>
+			<radiobutton id="10202" rect="300,260,150,46" style="btn.notify" text="i18n(news)"/>
+			<static name="content" rect="0,306,450,240" background-color="rgba(255,255,255,235)" background-image="res(content.png)" background-repeat="1" background-position="40,6">
+				<button id="10100" rect="70,23,270,28" style="btn.news" text="i18n(news1)"/>
+				<button id="10101" rect="70,64,270,28" style="btn.news" text="i18n(news2)"/>
+				<button id="10102" rect="70,106,270,28" style="btn.news" text="i18n(news3)"/>
+				<button id="10103" rect="70,146,270,28" style="btn.news" text="i18n(news4)"/>
+				<button id="10104" rect="70,187,270,28" style="btn.news" text="i18n(news5)"/>
+
+				<static id="10105" rect="350,23,80,28" style="stc.date" text="i18n(date1)"/>
+				<static id="10106" rect="350,64,80,28" style="stc.date" text="i18n(date2)"/>
+				<static id="10107" rect="350,106,80,28" style="stc.date" text="i18n(date3)"/>
+				<static id="10108" rect="350,146,80,28" style="stc.date" text="i18n(date4)"/>
+				<static id="10109" rect="350,187,80,28" style="stc.date" text="i18n(date5)"/>
+			</static>
+		</page>
+
+		<page id="20000" name="gamearea" rect="0,0,450,546" style-object="0">
+			<edit id="20001" rect="129,30,192,28" styleex-object="-671088640" background-image="res(shr.png)" padding-text="12,0,30,0" color-caret="-1" color="-1" color-banner="rgba(255,255,255,153)" text-banner="i18n(entergame)"/>
+			<static name="platform" rect="5,80,440,60" style="stc.setting">
+				<static id="20120" rect="20,5,80,24" background-image="res(gametype.bkg.png)" background-grid="5,5,5,5"/>
+				<radiobutton id="20101" rect="20,5,80,24" style="btn.gametype" text="i18n(allgame)" check="1"/>
+				<radiobutton id="20102" rect="100,5,80,24" style="btn.gametype" text="i18n(hotgame)"/>
+				<radiobutton id="20103" rect="180,5,80,24" style="btn.gametype" text="i18n(area1)" lparam="1"/>
+				<radiobutton id="20104" rect="260,5,80,24" style="btn.gametype" text="i18n(area2)" lparam="2"/>
+				<radiobutton id="20105" rect="340,5,80,24" style="btn.gametype" text="i18n(area3)" lparam="3"/>
+				<radiobutton id="20106" rect="20,30,80,24" style="btn.gametype" text="i18n(area4)" lparam="4"/>
+				<radiobutton id="20107" rect="100,30,80,24" style="btn.gametype" text="i18n(area5)" lparam="5"/>
+				<radiobutton id="20108" rect="180,30,80,24" style="btn.gametype" text="i18n(area6)" lparam="6"/>
+				<radiobutton id="20109" rect="260,30,80,24" style="btn.gametype" text="i18n(area7)" lparam="7"/>
+				<radiobutton id="20110" rect="340,30,80,24" style="btn.gametype" text="i18n(area8)" lparam="8"/>
+			</static>
+			<listview id="20100" rect="10,150,435,380"/>
+		</page>
+
+		<page id="30000" name="settings" rect="0,0,450,546" style-object="0">
+			<static rect="0,35,450,30" style="stc.setting" text="i18n(usercenter)"/>
+
+			<page id="31000" name="user.settings" rect="0,75,450,60">
+				<button id="31001" rect="20,0,60,60" style="btn.tools" background-image="res(setting\official.png)" text="i18n(official)"/>
+				<button id="31002" rect="90,0,60,60" style="btn.tools" background-image="res(setting\password.png)" text="i18n(changepsw)"/>
+				<button id="31003" rect="160,0,60,60" style="btn.tools" background-image="res(setting\buy.png)" text="i18n(buy)"/>
+				<button id="31004" rect="230,0,60,60" style="btn.tools" background-image="res(setting\services.png)" text="i18n(services)"/>
+				<button id="31005" rect="300,0,60,60" style="btn.tools" background-image="res(setting\cdk.png)" text="i18n(cdk)"/>
+			</page>
+
+			<static rect="0,145,450,30" style="stc.setting" text="i18n(tools)"/>
+
+			<page id="32000" name="user.tools" rect="0,185,450,60">
+				<button id="32001" rect="20,0,60,60" style="btn.tools" background-image="res(setting\lsp.png)" text="i18n(lsp.inst)" tips="i18n(tips.lsp.inst)"/>
+				<button id="32002" rect="90,0,60,60" style="btn.tools" background-image="res(setting\lsp.png)" text="i18n(lsp.reset)" tips="i18n(tips.lsp.reset)"/>
+				<button id="32003" rect="160,0,60,60" style="btn.tools" background-image="res(setting\tap.png)" text="i18n(tap.inst)" tips="i18n(tips.tap.inst)"/>
+				<button id="32004" rect="230,0,60,60" style="btn.tools" background-image="res(setting\tap.png)" text="i18n(tap.uninst)" tips="i18n(tips.tap.uninst)"/>
+				<button id="32005" rect="300,0,60,60" style="btn.tools" background-image="res(setting\svc.png)" text="i18n(svc.restart)" tips="i18n(tips.svc.restart)"/>
+				<button id="32006" rect="370,0,60,60" style="btn.tools" background-image="res(setting\log.png)" text="i18n(log.show)" tips="i18n(tips.log.show)"/>
+			</page>
+
+			<static rect="0,255,450,30" style="stc.setting" text="i18n(settings)"/>
+			<page id="33000" rect="30,295,410,240" name="user.settings">
+				<checkbutton id="33001" rect="0,0,130,24" style="btn.setting" text="i18n(savepassword)" oncheck="btn_savepassword"/>
+				<checkbutton id="33002" rect="130,0,130,24" style="btn.setting" text="i18n(autologin)" oncheck="btn_autologin"/>
+				<checkbutton id="33003" rect="260,0,410,24" style="btn.setting" text="i18n(topmost)"/>
+				<checkbutton id="33008" rect="0,34,410,24" style="btn.setting" text="i18n(dislsp)"/>
+				<checkbutton id="33004" rect="0,68,410,24" style="btn.setting" text="i18n(reconnect)"/>
+				<checkbutton id="33005" rect="0,104,410,24" style="btn.setting" text="i18n(shownotify)"/>
+				<checkbutton id="33006" rect="0,136,410,24" style="btn.setting" text="i18n(autohide)"/>
+				<checkbutton id="33007" rect="0,170,410,24" style="btn.setting" text="i18n(showmini)"/>
+			</page>
+		</page>
+	</page>
+	
+	<page id="3000" name="control" rect="0,0,300,385">
+		<page id="3001" rect="0,0,300,290">
+			<button name="game" rect="58,50,184,200" theme="file(Theme\btn.game.ext)" tips="i18n(selectgame)" onclick="btn_selectgame">
+				<static id="3050" rect="34,42,116,116" styleex-object="8388608" theme="file(Theme\std.icon.ext)"/>
+			</button>
+			<static id="3007" name="game.title" rect="0,260,300,24" text="i18n(defalut.game)" style="stc.defalut"/>
+		</page>
+
+		<page id="3002" rect="0,300,300,100">
+			<button id="3003" name="node" rect="0,6,300,36" style="btn.info" theme="file(Theme\btn.node.ext)" onclick="btn_node_show" text="i18n(defalut.node)" tips="i18n(tips.nodes)"/>
+			<static id="3004" name="delay" rect="152,6,148,36" style="stc.defalut" styleex-object="8388608" text="0 ms" />
+			<button id="3005" name="mode" rect="0,45,149,36" style="btn.info" theme="file(Theme\btn.mode.ext)" onclick="btn_node_show" text="i18n(mode.auto)" tips="i18n(tips.mode)"/>	
+			<button id="3006" name="network" rect="152,45,148,36" style="btn.info" theme="file(Theme\btn.network.ext)" text="i18n(network)" tips="i18n(tips.network)" onclick="btn_plugin_show"/>
+		</page>
+
+	</page>
+
+
+	<button id="4000" name="speed" rect="56,437,188,54" background-image="res(speed.png)" text="i18n(speedup)" theme="file(Theme\btn.speed.ext)"/>
+	
+	<static id="5000" name="nodes" rect="0,0,300,546" background-color="rgba(0,0,0,31)" blur="30" style-object="0" styleex-object="134217728">
+		<page id="5001" rect="0,0,300,546">
+			<static rect="0,35,300,30" style="stc.setting">
+				<static id="2022" rect="0,0,160,30" text="i18n(nodename)" style="stc.header" style-object="268435456" text-format="2085"/>
+				<static id="2023" rect="180,0,60,30" text="i18n(delay)" style="stc.header"/>
+				<static id="2025" rect="240,0,40,30" text="i18n(nodestatus)" style="stc.header"/>
+			</static>
+
+			<listview id="2026" rect="10,70,280,230"/>
+
+			<static rect="0,307,300,30" style="stc.setting" text="i18n(title.mode)"/>
+			<page name="node.mode" rect="40,350,240,60" style-object="402653184">
+				<radiobutton id="2031" rect="120,0,100,26" text="i18n(mode.1)" style="btn.default.colors" check="1"/>
+				<radiobutton id="2032" rect="0,30,100,26" text="i18n(mode.2)" style="btn.default.colors"/>
+				<radiobutton id="2033" rect="120,30,100,26" text="i18n(mode.3)" style="btn.default.colors"/>
+			</page>
+			<checkbutton id="2030" rect="40,350,100,26" text="i18n(mode.auto)" style="btn.default.colors" check="1" oncheck="btn_node_mode_check"/>
+			<button id="2027" rect="56,437,188,54" background-image="res(speed.png)" theme="file(Theme\btn.speed.ext)" onclick="btn_node_hide" text="i18n(node.select)"/>
+		</page>
+		<page id="5002" rect="0,0,300,546">
+			<static rect="0,35,300,30" style="stc.setting" text="i18n(plugin.memory)"/>
+			<checkbutton id="5100" rect="20,70,300,30" style="btn.setting" text="i18n(memory.cache)"/>
+			<checkbutton id="5101" rect="20,100,300,30" style="btn.setting" text="i18n(memory.virtual)"/>
+			<checkbutton id="5102" rect="20,130,300,30" style="btn.setting" text="i18n(memory.game)"/>
+			<static rect="0,165,300,30" style="stc.setting" text="i18n(plugin.game)"/>
+			<page id="5200" rect="0,200,300,230">
+
+			</page>
+			<button id="5010" rect="56,437,188,54" background-image="res(speed.png)" theme="file(Theme\btn.speed.ext)" onclick="btn_node_hide" text="i18n(plugin.save)"/>
+		</page>
+	</static>
+
+	<page id="6000" rect="0,510,300,30">
+		<static rect="50,0,200,26" text="i18n(tips.buy)" style="stc.user" background-image="res(user.png)" color="rgba(255,81,0,230)"/>
+		<button id="2000" rect="180,0,80,24" text="i18n(xufei)" style="btn.link" />
+	</page>
+	
+	<static name="menu.position" rect="100,545,100,1" background-color="rgba(255,255,255,255)" style="page.topmost"/>
+	<static name="footer" rect="0,546,752,54" background-color="rgba(255,255,255,51)" style-object="268435456" text-format="2086" padding-text="0,0,20,0" color="rgba(255,255,255,255)" font-size="13" text="i18n(version)">
+		<radiobutton id="1100" rect="0,0,100,54" style="btn.menu" background-image="res(menu.game.png)" oncheck="btn_maintab_select" lparam="20000" text="i18n(menu.game)"/>
+		<radiobutton id="1101" rect="100,0,100,54" style="btn.menu" background-image="res(menu.home.png)" oncheck="btn_maintab_select" lparam="10000" text="i18n(menu.home)" onload="onchecked_main" check="1"/>
+		<radiobutton id="1102" rect="200,0,100,54" style="btn.menu" background-image="res(menu.setting.png)" oncheck="btn_maintab_select" lparam="30000" text="i18n(menu.setting)"/>
+	</static>
+</Jiasula>

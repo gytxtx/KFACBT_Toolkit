@@ -1,0 +1,35 @@
+btn.normal
+	{
+	color-normal:rgba(255,255,255,255);
+	color-hover:rgba(255,255,255,255);
+	color-down:rgba(255,255,255,255);
+	color-checked:rgba(255,255,255,255);
+	color-shadow:rgba(0,0,0,128);
+	}
+btn.link
+	{
+	color-normal:rgba(255,255,255,230);
+	color-hover:rgba(255,255,255,255);
+	color-down:rgba(255,255,255,255);
+	color-shadow:rgba(0,0,0,128);
+	style-object:268435456;
+	styleex-object:-1744830464;
+	}
+edit.login
+	{
+	styleex-object:-671088640;	
+	font-size:14;
+	color-normal:rgba(255,255,255,255);
+	color-banner:rgba(255,255,255,204);
+	color-caret:rgba(255,255,255,255);
+	padding-text:90,0,90,0;
+	}
+edit.reg
+	{
+	font-size:14;
+	color-normal:rgba(255,255,255,255);
+	color-banner:rgba(255,255,255,204);
+	color-caret:rgba(255,255,255,255);
+	padding-text:42,1,20,0;
+	theme:file(Theme\edit.light.ext);
+	}

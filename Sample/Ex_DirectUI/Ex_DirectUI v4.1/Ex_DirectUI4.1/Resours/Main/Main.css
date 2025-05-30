@@ -1,0 +1,156 @@
+page.topmost
+{
+	styleex-object:536870912;
+}
+btn.topmost
+{
+	styleex-object:939524096;
+}
+btn.customdraw
+{
+	styleex-object:-1744830464;
+}
+btn.topmost.customdraw
+{
+	styleex-object:-1207959552;
+}
+btn.info
+/*节点,模式,流量*/
+{
+	/*color/background-color*/
+	style-object:268435456;
+	color:rgba(255,255,255,235);
+	color-hover:rgba(128,255,255,255);
+	color-down:rgba(128,255,255,255);
+	color-focus:rgba(255,255,255,235);
+	background-color: rgba(255,255,255,51);
+	text-format:36;
+	font-size:12;
+	font-style:1;
+	padding-text:54,0,0,0;
+}
+
+stc.defalut
+{
+	/*color/center/vcenter/font-size/font-style*/
+	color:rgba(128,255,255,255);
+	style-object:268435456;
+	font-style:1;
+	text-format:2085;
+}
+stc.user
+/*用户信息*/
+{
+	color:rgba(255,255,255,255);
+	background-repeat:1;
+	background-position:0,2;
+	padding-text:30,0,0,0;
+	font-size:13;
+
+}
+btn.gametype
+/*游戏类别*/
+{
+	color:rgba(255,255,255,255);
+	color-hover:rgba(128,255,255,255);
+	color-down:rgba(128,255,255,255);
+	color-checked:rgba(255,255,255,255);
+	style-object:268435458;
+	styleex-object:-1744830464;
+	padding-text:5,5,5,5;
+	font-size: 13;
+	text-format:37;
+	oncheck:btn_area;
+}
+btn.menu
+/*主菜单*/
+{
+	style-object:268435458;
+	styleex-object:-1744830464;
+	font-size:13;
+	font-style:1;
+	text-format:41;
+	color:rgba(255,255,255,255);
+	color-hover:rgba(255,255,255,255);
+	color-down:rgba(255,255,255,255);
+	color-checked:rgba(255,255,255,255);
+	padding-text:0,0,0,5;
+	background-repeat:1;
+	background-position:35,2;
+}
+
+stc.setting
+{
+	background-image:res(bkg.line.png);
+	background-grid:148,3,148,3;
+	color:rgba(255,255,255,255);
+	font-size:13;
+	font-style:1;
+	style-object:268435456;
+	text-format:2085;
+	paddintg-text:0,0,0,2;
+}
+btn.tools
+{
+	theme:file(Theme\btn.tools.ext);
+	color:rgba(255,255,255,230);
+	color-hover:rgba(255,255,255,230);
+	color-down:rgba(255,255,255,230);
+	color-focus:rgba(255,255,255,230);
+	style-object:268435460;
+	text-format:41;
+	padding-text:0,0,0,5;
+}
+btn.notify
+/*公告、活动、新闻*/
+{
+	theme:file(Theme\btn.notify.ext);
+	style-object:268435458;
+	text-format:37;
+	onmouseover:btn_notify_hover;
+}
+btn.news
+{
+	font-size:14;
+	styleex-object:-1744830464;
+	style-object:268435456;
+	text-format:264228;
+	color-hover:rgba(0,182,176,255);
+	color-down:rgba(0,182,176,230);
+}
+stc.date
+{
+	color:rgba(0,0,0,128);
+	padding-text:0,1,0,0;
+}
+
+stc.header
+{
+	color:rgba(255,255,255,230);
+	font-style:1;
+}
+btn.default.colors
+{
+	color:rgba(255,255,255,230);
+	color-hover:rgba(255,255,255,230);
+	color-down:rgba(255,255,255,230);
+	color-focus:rgba(255,255,255,230);
+	color-checked:rgba(255,255,255,230);
+	font-style:1;
+}
+btn.link
+{
+	font-size:13;
+	styleex-object:-1744830464;
+	color:rgba(128,255,255,230);
+	color-hover:rgba(128,255,255,255);
+	color-down:rgba(128,255,255,255);
+}
+btn.setting
+{
+	color:rgba(255,255,255,230);
+	color-hover:rgba(255,255,255,255);
+	color-down:rgba(255,255,255,255);
+	color-focus:rgba(255,255,255,255);
+	color-checked:rgba(255,255,255,255);
+}

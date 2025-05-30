@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item>
+	<static rect="50,50,300,50" layout="1" >
+		<button id="1111" rect="95,246,100,40" text="i18n(ccc)" theme="file(Theme\btn.login.ext)"/>
+		<button id="1112" rect="95,246,100,40" text="i18n(bbb)" theme="file(Theme\btn.login.ext)" style="btn.link"/>
+		<button id="1112" rect="95,246,100,40" text="i18n(aaa)" theme="file(Theme\btn.login.ext)"/>
+	</static>
+</Item>

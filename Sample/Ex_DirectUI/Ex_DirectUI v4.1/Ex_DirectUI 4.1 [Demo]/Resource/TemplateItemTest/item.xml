@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Item layout="5" layout-padding="5,5,5,5">
+    <static rect="0,0,50,50" background-image="res(nc.inactive.png)" layout-leftAlignOf="-1" 
+		layout-topAlignOf="-1" layout-bottomAlignOf="-1" nodeID="1" />
+	<button rect="0,0,75,24" text="click" layout-centerV="1" layout-rightAlignOf="-1" nodeID="2" layout-margin="5,0,10,0"/>
+	<static rect="0,0,0,14" text="title" font-size="14" font-style="1" layout-topAlignOf="-1" 
+		layout-leftOf="@2" layout-rightOf="@1" nodeID="3" />
+	<static rect="0,0,0,0" text="content" text-format="2048" layout-bottomOf="@3" layout-leftAlignOf="@3"
+		layout-rightAlignOf="@3" layout-bottomAlignOf="-1" nodeID="4" color-normal="rgb(50,50,50)" />
+</Item>
